@@ -1,0 +1,195 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.normSec {
+  height: 100vh;
+}
+
+body {
+  background-image: url(assets/img/background2.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.homeUnderline{
+  width: 70%;
+}
+
+/* START OF SCROLLBAR STYLES */
+body {
+
+  scrollbar-width: thin;
+  scrollbar-color: black rgb(255, 94, 161);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 94, 161);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 3px solid rgb(255, 94, 161);
+}
+
+/* END OF SCROLLBAR STYLES */
+
+/* START OF MAIN SECTION STYLES */
+
+
+.modalOpen{
+  width: 150px;
+  height: 150px;
+  margin: 5%;
+  padding: 1%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  border: 5px solid rgb(255, 94, 161);
+  overflow: hidden;
+  color: black;
+}
+
+/* END OF MAIN SECTION STYLES */
+
+
+
+
+
+/*
+  SIDEBAR LEFT-------------------------------------------------->
+*/
+
+/*VARIABLES*/
+:root{
+  --width: 400px;
+  --padding: 10px;
+  --bgcolor: rgba(33, 37, 41, 1);
+  --hovercolor: rgb(255, 94, 161);;
+  --width-collapsed: 50px;
+}
+/* ----------------------------- */
+body{
+  margin-left: var(--width-collapsed);
+}
+
+.body-expanded{
+  margin-left: var(--width);
+}
+
+#main-container{
+  color: rgb(29, 26, 27);
+}
+
+#sidemenu{
+  background-color: var(--bgcolor);
+  color: white;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#sidemenu #header {
+  box-sizing: border-box;
+
+}
+
+#sidemenu #header #title{
+  box-sizing: border-box;
+
+}
+
+#menu-btn{
+  text-align: end;
+  border-radius: 50px;
+  background-color: var(--hovercolor);
+}
+
+#sidemenu #header #menu-btn{
+  display: inline-block;
+}
+
+#sidemenu #header #menu-btn {
+  /*cursor: pointer;*/
+  padding: 10px;
+  width: var(--width-collapsed);
+  box-sizing: border-box;
+}
+
+#menu-btn:hover {
+  background-color: var(--hovercolor);
+}
+
+#presentation{
+  padding: 35px;
+}
+
+.menu-expanded{
+  width: var(--width);
+  box-shadow: 0 0 10px rgb(255, 94, 161);
+  z-index: 3;
+}
+
+.menu-expanded #header #title {
+  text-align: end;
+  display: inline-block;
+  width: calc(100%);
+  margin-right: -5px;
+  padding: var(--padding);
+
+}
+
+.menu-expanded #presentation {
+  width: 100%;
+}
+
+.menu-collapsed{
+  width: var(--width-collapsed);
+  padding: 20px;
+}
+
+.menu-collapsed #presentation {
+  display: none;
+}
+
+.portraitImage {
+  width: 10rem;
+  border: 5px white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+.title{
+color: rgb(95, 208, 212);
+}
+
+.frase{
+color: white;
+}
+/*
+
+END OF THE SIDEBAR LEFT ------------------------------------------------------------------------------------->
+
+*/
+
+
+

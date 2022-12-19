@@ -1,0 +1,103 @@
+/*
+
+START OF THE FOOTER ------------------------------------------------------------------------------------->
+
+*/
+
+
+
+.navbar-toggler{
+  background-color: rgb(255, 94, 161);
+  color: white;
+
+  }
+
+  .navbar-toggler:hover{
+    color: white;
+  }
+
+  .navbar-toggler:active{
+    color: white;
+  }
+
+  .navbar-brand{
+    background-color: rgb(95, 208, 212);
+    color: black;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 175px;
+    height: 5%;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Emilys Candy', cursive;
+  font-size: 1.5em;
+  }
+
+  .navbar-brand fa-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .p-redes{
+    font-family: 'Emilys Candy', cursive;
+    font-size: 2em;
+    margin-left: 20px;
+    color: rgb(255, 94, 161);
+    text-decoration: none;
+
+  }
+
+  .argProg{
+    width: 12rem;
+    margin-right: 15px;
+  }
+
+  .sizeIcon{
+    font-size: 3em;
+    margin-left: 20px;
+    color: white;
+  }
+
+
+  /* START OF FORM STYLES---------------------------------------------------------- */
+
+  input{
+    margin-right: 20px;
+  }
+
+  label {
+    font-family: 'Emilys Candy', cursive;
+    font-size: 1.5em;
+  }
+
+  .send-btn{
+    border-radius: 100px;
+    background-color: rgb(255, 94, 161);
+    color: white;
+    font-size: larger;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  /* END OF FORM STYLES---------------------------------------------------------- */
+
+  /* START OF LANGUAGES AND AP LOGO STYLES---------------------------------------------------------- */
+
+  .es{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .en{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* END OF LANGUAGES AND AP LOGO STYLES---------------------------------------------------------- */
+
+  /*
+
+  END OF THE FOOTER ------------------------------------------------------------------------------------->
+
+  */

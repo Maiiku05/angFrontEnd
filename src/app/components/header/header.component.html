@@ -1,0 +1,251 @@
+<div class="row normSec g-0" id="home">
+
+<!------------------------------------------SECTION BUTTONS------------------------------------------------------>
+
+  <div class="col-4 d-flex justify-content-center align-items-center">
+    <div>
+
+      <div class="modalOpen">
+        <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+          <button onclick="" class="secBttn" (click)="showSec(0)"><fa-icon [icon]="faBook"></fa-icon></button>
+        </div>
+      </div>
+
+      <div class="modalOpen ">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <button onclick="" class="secBttn" (click)="showSec(1)" ><fa-icon [icon]="faBrain"></fa-icon></button>
+          </div>
+      </div>
+
+      <div class="modalOpen ">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <button onclick="" class="secBttn" (click)="showSec(2)" ><fa-icon [icon]="faFlask"></fa-icon></button>
+          </div>
+      </div>
+
+      <div class="modalOpen ">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <button onclick="" class="secBttn" (click)="showSec(3)" ><fa-icon [icon]="faCoffee"></fa-icon></button>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!------------------------------------------END SECTION BUTTONS------------------------------------------------------>
+
+  <!------------------------------------------SECTIONS------------------------------------------------------>
+  <div class="col-8 organize g-0">
+
+    <div class="position-absolute top-0 end-0">
+        <button class="log">Login</button>
+        <button class="log">Logout</button>
+      </div>
+
+    <!------------------------------------------HOME SECTION------------------------------------------------------>
+    <div class="organizePos sizeEduSec d-flex justify-content-center align-items-center">
+
+
+
+      <div>
+
+        <h1>Hola!</h1>
+        <h2>Soy</h2><h1>Aixa</h1>
+        <h3>{{level}} {{career}}</h3>
+
+      </div>
+
+  </div>
+
+  <!------------------------------------------END HOME SECTION------------------------------------------------------>
+
+
+<!------------------------------------------EDUCATION SECTION------------------------------------------------------>
+    <div class="organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[0]">
+
+        <mat-tab-group mat-align-tabs="center" class="sizeEduSec">
+
+          <mat-tab label="Educación">
+            <ul>
+              <li *ngFor="let edu of eduData">
+                <h5>{{edu.title}}</h5>
+                <p>{{edu.description}}</p>
+              </li>
+            </ul>
+          </mat-tab>
+
+          <mat-tab label="Cursos">
+            <ul>
+              <li *ngFor="let edu of eduData">
+                <h5>{{edu.title}}</h5>
+                <p>{{edu.description}}</p>
+              </li>
+            </ul>
+          </mat-tab>
+
+          <mat-tab label="Certificaciones">
+            <ul>
+              <li *ngFor="let edu of eduData">
+                <h5>{{edu.title}}</h5>
+                <p>{{edu.description}}</p>
+              </li>
+            </ul>
+          </mat-tab>
+
+        </mat-tab-group>
+
+    </div>
+
+    <!------------------------------------------END EDUCATION SECTION------------------------------------------------------>
+<!------------------------------------------SKILLS SECTION------------------------------------------------------>
+    <div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[1]">
+      <mat-tab-group mat-align-tabs="center" class="sizeEduSec">
+
+        <mat-tab label="Hard Skills">
+          <ul>
+            <li *ngFor="let edu of eduData">
+              <h5>{{edu.title}}</h5>
+              <p>{{edu.description}}</p>
+            </li>
+          </ul>
+        </mat-tab>
+
+        <mat-tab label="Soft Skills">
+          <ul>
+            <li *ngFor="let edu of eduData">
+              <h5>{{edu.title}}</h5>
+              <p>{{edu.description}}</p>
+            </li>
+          </ul>
+        </mat-tab>
+
+      </mat-tab-group>
+    </div>
+
+    <!------------------------------------------END SKILLS SECTION------------------------------------------------------>
+<!------------------------------------------LABORATORY SECTION------------------------------------------------------>
+    <div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[2]">
+      <div class="g-0 bodySec">
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-100 h-100 align-items-center">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+          <div class="d-flex w-100 h-100 align-items-center">
+          <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!------------------------------------------END LABORATORY SECTION------------------------------------------------------>
+<!------------------------------------------PROJECTS SECTION------------------------------------------------------>
+
+    <div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[3]">
+      <div>
+          <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+          </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+            <div class="d-flex w-200 h-200 align-items-center color">
+            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+            </div>
+        </div>
+
+        <div class="modalOpen ">
+          <div class="d-flex w-200 h-200 align-items-center color">
+          <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!------------------------------------------END PROJECTS SECTION------------------------------------------------------>
+   </div>
+   <!------------------------------------------END SECTION------------------------------------------------------>
+</div>
