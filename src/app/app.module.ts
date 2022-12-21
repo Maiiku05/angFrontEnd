@@ -15,6 +15,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     HeaderComponent,
     LoginComponent,
     BtnComponent,
+    PortfolioComponent,
 
   ],
   imports: [

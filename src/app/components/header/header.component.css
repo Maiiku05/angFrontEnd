@@ -45,6 +45,10 @@ h2 {
   position: absolute;
 }
 
+.off{
+  visibility: hidden;
+}
+
 .color {
   background-color:rgb(95, 208, 212);
 }
