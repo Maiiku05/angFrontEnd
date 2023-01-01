@@ -4,6 +4,8 @@ import { faBrain } from '@fortawesome/free-solid-svg-icons';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+declare var anime: any;
+
 
 @Component({
   selector: 'app-header',
@@ -15,8 +17,8 @@ export class HeaderComponent implements OnInit {
 
   eduData:any;
   arrShowSec:Boolean[] = [false,false,false,false];
-  level = "Jr.";
-  career = "FullStack Web Development.";
+  career:String =  "Full Stack Developer";
+  level:String = "Jr";
 
 
   faCoffee = faCoffee;
@@ -53,3 +55,4 @@ export class HeaderComponent implements OnInit {
 
 
 }
+

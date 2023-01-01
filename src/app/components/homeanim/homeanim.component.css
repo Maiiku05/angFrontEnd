@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  font-size: clamp(3rem, 12vw + 1rem, 12rem);
+  letter-spacing: 0.2em;
+  font-family: 'Emilys Candy', cursive;
+  padding: 20px;
+}
+
+.c1 span {
+  display: inline-block;   /* essential */
+}
+
+h2 {
+  font-family: 'Paytone One';
+  font-size: clamp(1.5rem, 5vw + 1rem, 5rem);
+}
+
+h3 {
+  font-family: 'Paytone One';
+  font-size: clamp(0.8rem, 2vw + 1rem, 2rem);
+}
+
+
+

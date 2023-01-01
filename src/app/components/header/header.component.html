@@ -1,41 +1,7 @@
 <div class="row normSec g-0" id="home">
 
-<!------------------------------------------SECTION BUTTONS------------------------------------------------------>
-
-  <div class="col-4 d-flex justify-content-center align-items-center">
-    <div>
-
-      <div class="modalOpen">
-        <div class="d-flex w-100 h-100 align-items-center justify-content-center">
-          <button onclick="" class="secBttn" (click)="showSec(0)"><fa-icon [icon]="faBook"></fa-icon></button>
-        </div>
-      </div>
-
-      <div class="modalOpen ">
-          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
-            <button onclick="" class="secBttn" (click)="showSec(1)" ><fa-icon [icon]="faBrain"></fa-icon></button>
-          </div>
-      </div>
-
-      <div class="modalOpen ">
-          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
-            <button onclick="" class="secBttn" (click)="showSec(2)" ><fa-icon [icon]="faFlask"></fa-icon></button>
-          </div>
-      </div>
-
-      <div class="modalOpen ">
-          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
-            <button onclick="" class="secBttn" (click)="showSec(3)" ><fa-icon [icon]="faCoffee"></fa-icon></button>
-          </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!------------------------------------------END SECTION BUTTONS------------------------------------------------------>
-
   <!------------------------------------------SECTIONS------------------------------------------------------>
-  <div class="col-8 organize g-0">
+  <div class="col-12 col-md organize sizeSecContentSm g-0">
 
     <div class="position-absolute top-0 end-0">
         <button class="log organizePos" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
@@ -125,128 +91,102 @@
 
     <!------------------------------------------END SKILLS SECTION------------------------------------------------------>
 <!------------------------------------------LABORATORY SECTION------------------------------------------------------>
-    <div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[2]">
-      <div class="g-0 bodySec">
+<div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[2]">
+  <mat-tab-group mat-align-tabs="center" class="sizeEduSec">
 
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
+    <mat-tab label="Laboratory">
+      <ul>
+        <li *ngFor="let edu of eduData">
+          <h5>{{edu.title}}</h5>
+          <p>{{edu.description}}</p>
+        </li>
+      </ul>
+    </mat-tab>
 
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-100 h-100 align-items-center">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-          <div class="d-flex w-100 h-100 align-items-center">
-          <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
+  </mat-tab-group>
+</div>
 
 <!------------------------------------------END LABORATORY SECTION------------------------------------------------------>
 <!------------------------------------------PROJECTS SECTION------------------------------------------------------>
 
-    <div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[3]">
-      <div>
-          <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-          </div>
+<div class="vis organizePos sizeEduSec d-flex justify-content-center align-items-center" *ngIf="arrShowSec[3]">
+  <mat-tab-group mat-align-tabs="center" class="sizeEduSec">
 
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
+    <mat-tab label="Projects">
+      <ul>
+        <li *ngFor="let edu of eduData">
+          <h5>{{edu.title}}</h5>
+          <p>{{edu.description}}</p>
+        </li>
+      </ul>
+    </mat-tab>
 
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-            <div class="d-flex w-200 h-200 align-items-center color">
-            <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-            </div>
-        </div>
-
-        <div class="modalOpen ">
-          <div class="d-flex w-200 h-200 align-items-center color">
-          <a href="#" class="logoEmpresa "><img src="#" alt="Logo de la empresa"></a>
-          </div>
-        </div>
-
-      </div>
-    </div>
+  </mat-tab-group>
+</div>
 <!------------------------------------------END PROJECTS SECTION------------------------------------------------------>
-   </div>
-   <!------------------------------------------END SECTION------------------------------------------------------>
+  </div>
+
+  <!------------------------------------------END SECTION------------------------------------------------------>
+
+  <!------------------------------------------SECTION BUTTONS------------------------------------------------------>
+
+  <div class="d-none d-md-flex col-md-3 d-flex justify-content-center align-items-center">
+
+    <div class="d-none d-md-block">
+
+      <div class="bttnSec">
+        <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+          <button onclick="" class="secBttn" (click)="showSec(0)"><fa-icon [icon]="faBook"></fa-icon></button>
+        </div>
+      </div>
+
+      <div class="bttnSec">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <button onclick="" class="secBttn" (click)="showSec(1)" ><fa-icon [icon]="faBrain"></fa-icon></button>
+          </div>
+      </div>
+
+      <div class="bttnSec">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <button onclick="" class="secBttn" (click)="showSec(2)" ><fa-icon [icon]="faFlask"></fa-icon></button>
+          </div>
+      </div>
+
+      <div class="bttnSec">
+          <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+            <button onclick="" class="secBttn" (click)="showSec(3)" ><fa-icon [icon]="faCoffee"></fa-icon></button>
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="row sizeSecBttnSm d-md-none g-0">
+
+    <div class="col"></div>
+
+    <div class="col buttonSec2 d-inline " >
+        <button onclick="" class="secBttn2" (click)="showSec(0)"><fa-icon [icon]="faBook"></fa-icon></button>
+    </div>
+
+    <div class="col buttonSec2 d-inline ">
+          <button onclick="" class="secBttn2" (click)="showSec(1)" ><fa-icon [icon]="faBrain"></fa-icon></button>
+    </div>
+
+    <div class="col buttonSec2 d-inline">
+          <button onclick="" class="secBttn2" (click)="showSec(2)" ><fa-icon [icon]="faFlask"></fa-icon></button>
+    </div>
+
+    <div class="col buttonSec2 d-inline">
+          <button onclick="" class="secBttn2" (click)="showSec(3)" ><fa-icon [icon]="faCoffee"></fa-icon></button>
+    </div>
+
+    <div class="col"></div>
+
+
+</div>
+
+  <!------------------------------------------END SECTION BUTTONS------------------------------------------------------>
+
 </div>

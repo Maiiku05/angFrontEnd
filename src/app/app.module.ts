@@ -16,6 +16,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { HomeanimComponent } from './components/homeanim/homeanim.component';
+
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     LoginComponent,
     BtnComponent,
     PortfolioComponent,
+    HomeanimComponent,
+
 
   ],
   imports: [
