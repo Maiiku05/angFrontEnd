@@ -2,12 +2,13 @@
   background-color: rgb(95, 208, 212);
   color: black;
   border: none;
+  padding: 5px;
   margin: 5px;
-  padding: 10px;
   border-radius: 10px;
   font-family: 'Emilys Candy', cursive;
   font-size: 1.5em;
 }
+
 
 .ml {
   margin-left: 20px;

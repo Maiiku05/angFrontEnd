@@ -11,16 +11,16 @@
 }
 
 .c1 span {
-  display: inline-block;   /* essential */
+  display: inline-block;
 }
 
 h2 {
-  font-family: 'Paytone One';
-  font-size: clamp(1.5rem, 5vw + 1rem, 5rem);
+  font-family: 'Paytone One', cursive;
+  font-size: clamp(1.3rem, 4vw + 1rem, 4rem);
 }
 
 h3 {
-  font-family: 'Paytone One';
+  font-family: 'Paytone One', cursive;
   font-size: clamp(0.8rem, 2vw + 1rem, 2rem);
 }
 

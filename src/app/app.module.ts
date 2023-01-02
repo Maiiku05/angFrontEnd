@@ -7,7 +7,6 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { LoginComponent } from './components/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BtnComponent } from './components/btn/btn.component';
@@ -26,7 +25,6 @@ import { HomeanimComponent } from './components/homeanim/homeanim.component';
     SideBarComponent,
     FooterComponent,
     HeaderComponent,
-    LoginComponent,
     BtnComponent,
     PortfolioComponent,
     HomeanimComponent,

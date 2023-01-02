@@ -5,6 +5,8 @@
 
 }
 
+
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -27,28 +29,6 @@ body {
   overflow-x: hidden;
   user-select: none;
 }
-
-/* START OF MAIN SECTION STYLES */
-
-
-.modalOpen{
-  width: 150px;
-  height: 150px;
-  margin: 5%;
-  padding: 1%;
-  display: inline-block;
-  background-color: white;
-  border-radius: 20px;
-  border: 5px solid rgb(255, 94, 161);
-  overflow: hidden;
-  color: black;
-}
-
-/* END OF MAIN SECTION STYLES */
-
-
-
-
 
 /*
   SIDEBAR LEFT-------------------------------------------------->
@@ -114,7 +94,7 @@ body {
 }
 
 #presentation{
-  padding: 35px;
+  padding: 0px;
 }
 
 .menu-expanded{
@@ -146,7 +126,7 @@ body {
 }
 
 .portraitImage {
-  width: 10rem;
+  width: 8rem;
   border: 5px white;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -170,3 +150,12 @@ END OF THE SIDEBAR LEFT --------------------------------------------------------
 
 
 
+app-header{
+  z-index: 1;
+}
+app-side-bar{
+  z-index: 2;
+}
+app-footer{
+  z-index: 4;
+}
